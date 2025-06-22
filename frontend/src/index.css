@@ -1,0 +1,72 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 14%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 222 47% 24%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 222 47% 18%;
+    --muted-foreground: 210 40% 80%;
+
+    --accent: 217 91% 60%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 222 47% 28%;
+    --input: 222 47% 28%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-db-900 text-foreground;
+    background: linear-gradient(to bottom, rgb(15, 37, 73), rgb(9, 22, 52));
+    min-height: 100vh;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-db-800/50 backdrop-blur-sm border border-db-700/50 rounded-lg shadow-lg;
+  }
+  
+  .input-field {
+    @apply bg-db-800/70 border border-db-700 focus:border-db-500 focus:ring-1 focus:ring-db-500 text-white rounded-md shadow-sm w-full p-2 placeholder-db-400;
+  }
+  
+  .form-group {
+    @apply mb-4;
+  }
+  
+  .btn-primary {
+    @apply bg-db-500 hover:bg-db-600 text-white font-medium py-2 px-6 rounded-md shadow transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-db-700 hover:bg-db-600 text-white font-medium py-2 px-6 rounded-md shadow transition-colors duration-200;
+  }
+}
