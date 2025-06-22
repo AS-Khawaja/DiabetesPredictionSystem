@@ -5,7 +5,7 @@ A web-based system that predicts the likelihood of diabetes using machine learni
 Built with a **React + TypeScript frontend** and a **Flask + Python backend**.
 
 ---
-
+https://github.com/user-attachments/assets/2d2b0a0e-348d-469c-b8e0-f76000dbd8f8
 ## 📁 Project Structure
 
 ```
